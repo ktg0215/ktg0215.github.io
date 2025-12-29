@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Extensions | Your Name</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; color: white; margin-bottom: 40px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { opacity: 0.9; font-size: 1.1rem; }
+    .extensions { display: grid; gap: 24px; }
+    .extension-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .extension-icon {
+      width: 80px;
+      height: 80px;
+      background: #f0f0f0;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+    .extension-info h2 { font-size: 1.5rem; color: #1a1a2e; margin-bottom: 8px; }
+    .extension-info .price { color: #667eea; font-weight: 600; margin-bottom: 12px; }
+    .extension-info p { color: #666; line-height: 1.7; margin-bottom: 16px; }
+    .extension-info .buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .btn-primary { background: #667eea; color: white; }
+    .btn-secondary { background: #f0f0f0; color: #333; }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+    }
+    footer a { color: white; margin: 0 12px; text-decoration: none; opacity: 0.9; }
+    footer a:hover { opacity: 1; text-decoration: underline; }
+    @media (max-width: 600px) {
+      .extension-card { grid-template-columns: 1fr; text-align: center; }
+      .extension-icon { margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧩 Chrome Extensions</h1>
+      <p>生産性を向上させるブラウザ拡張機能</p>
+    </header>
+
+    <div class="extensions">
+      <!-- PromptStash -->
+      <div class="extension-card">
+        <div class="extension-icon">📝</div>
+        <div class="extension-info">
+          <h2>PromptStash</h2>
+          <div class="price">$5（買い切り）/ 無料版あり</div>
+          <p>AIユーザー向けプロンプト管理ツール。よく使うプロンプトを保存・整理し、ワンクリックで呼び出せます。ChatGPT、Claude、Geminiなど主要AIサービスに対応。</p>
+          <div class="buttons">
+            <a href="#" class="btn btn-primary">Chrome Web Storeで見る</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- X Detox -->
+      <div class="extension-card">
+        <div class="extension-icon">🧹</div>
+        <div class="extension-info">
+          <h2>X Detox</h2>
+          <div class="price">$3（買い切り）/ 無料版あり</div>
+          <p>X（Twitter）をすっきり使うためのツール。おすすめタイムライン、トレンド、プロモーションなど不要な要素を非表示にできます。</p>
+          <div class="buttons">
+            <a href="#" class="btn btn-primary">Chrome Web Storeで見る</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- YouTube Shorts Killer -->
+      <div class="extension-card">
+        <div class="extension-icon">🎬</div>
+        <div class="extension-info">
+          <h2>YouTube Shorts Killer</h2>
+          <div class="price">無料</div>
+          <p>YouTubeからShortsを完全に非表示にする拡張機能。ホーム画面、サイドバー、検索結果からShortsを削除し、集中してコンテンツを楽しめます。</p>
+          <div class="buttons">
+            <a href="#" class="btn btn-primary">Chrome Web Storeで見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="./tokushoho.html">特定商取引法に基づく表記</a>
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <a href="mailto:【your-email@example.com】">お問い合わせ</a>
+    </footer>
+  </div>
+</body>
+</html>
