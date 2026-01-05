@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chrome Extensions | Your Name</title>
+  <title>Chrome Extensions | ktg.shota</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -53,6 +53,18 @@
     .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
     .btn-primary { background: #667eea; color: white; }
     .btn-secondary { background: #f0f0f0; color: #333; }
+    .btn-disabled { background: #ccc; color: #666; cursor: not-allowed; }
+    .btn-disabled:hover { transform: none; box-shadow: none; }
+    .badge-new {
+      display: inline-block;
+      background: #ff6b6b;
+      color: white;
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
     footer {
       text-align: center;
       margin-top: 40px;
@@ -74,6 +86,19 @@
     </header>
 
     <div class="extensions">
+      <!-- Arbitra（新規追加） -->
+      <div class="extension-card">
+        <div class="extension-icon">💹</div>
+        <div class="extension-info">
+          <h2>Arbitra<span class="badge-new">NEW</span></h2>
+          <div class="price">¥1,480/月 or ¥4,980（買い切り）/ 無料版あり</div>
+          <p>せどり・転売の価格比較ツール。Amazonの商品ページからメルカリ・ヤフオクの相場を瞬時に確認。最安値・平均価格・中央値を表示し、仕入れ判断を効率化します。</p>
+          <div class="buttons">
+            <span class="btn btn-disabled">審査中 - 近日公開</span>
+          </div>
+        </div>
+      </div>
+
       <!-- PromptStash -->
       <div class="extension-card">
         <div class="extension-icon">📝</div>
@@ -115,11 +140,11 @@
     </div>
 
     <footer>
-  <a href="./tokushoho.html">特定商取引法に基づく表記</a>
-  <a href="./privacy.html">プライバシーポリシー</a>
-  <a href="mailto:ktg.shota@gmail.com">お問い合わせ</a>
-  <a href="https://www.aitoolzdir.com" target="_blank">AI Toolz Dir</a>
-</footer>
+      <a href="./tokushoho.html">特定商取引法に基づく表記</a>
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <a href="mailto:ktg.shota@gmail.com">お問い合わせ</a>
+      <a href="https://www.aitoolzdir.com" target="_blank">AI Toolz Dir</a>
+    </footer>
   </div>
 </body>
 </html>
